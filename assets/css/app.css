@@ -18,6 +18,12 @@
          url('../fonts/work-sans-v9-latin-700.woff') format('woff');
   }
   */
+
+  :root {
+       --primary-color: #00b778;
+       --secondary-color: #1880c2;
+       --rating-color: #ffd54f;
+  }
   
   body {
        background-color: #f5f5f5;
@@ -26,22 +32,22 @@
   }
 
   .offer {
-       border: 2px solid #1880c2;
+       border: 2px solid var(--secondary-color);
        border-radius: 5px;
        background-color: #fff;
        position: relative;
   }
 
   .offer::before {
-       display: block;
        content: 'MOVU Recommendation';
        position: absolute;
-       top: -22px;
+       top: -26px;
        left: 10px;
-       background: #1880c2;
+       background: var(--secondary-color);
        color: #fff;
-       padding: 0 10px;
+       padding: 2px 10px;
        border-radius: 2px 2px 0 0;
+       font-weight: 700;
   }
 
   h1 {
