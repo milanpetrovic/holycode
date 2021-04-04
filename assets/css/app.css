@@ -136,6 +136,10 @@ margin: 0 0 0 20px;
      top: -3px;
 }
 
+.tooltip.show {
+     opacity: 1;
+}
+
 .tooltip .tooltip-arrow {
      display: none !important;
 }
